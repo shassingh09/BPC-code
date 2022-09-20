@@ -1,0 +1,442 @@
+/**************************
+*
+*	GENERAL
+*
+**************************/
+.slider{
+    height: 386px;
+    position:relative;
+    margin-bottom: 20px;
+    z-index: 500;
+}
+
+.camera_wrap img, 
+.camera_wrap ol, .camera_wrap ul, .camera_wrap li,
+.camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
+.camera_thumbs_wrap a, .camera_thumbs_wrap img, 
+.camera_thumbs_wrap ol, .camera_thumbs_wrap ul, .camera_thumbs_wrap li,
+.camera_thumbs_wrap table, .camera_thumbs_wrap tbody, .camera_thumbs_wrap tfoot, .camera_thumbs_wrap thead, .camera_thumbs_wrap tr, .camera_thumbs_wrap th, .camera_thumbs_wrap td {
+	background: none;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none
+}
+.camera_wrap {
+	display: none;
+	float: none;
+	position: relative;
+	z-index: 1;
+	overflow:visible;
+	width: 100%;
+    height: 386px;
+}
+.slidershadow{
+    position: relative;
+    width: 100%;
+    height: 11px;
+}
+.camera_wrap img {
+	max-width: none !important;
+}
+.camera_fakehover {
+	height: 100%;
+	min-height: 150px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.camera_src {
+	display: none;
+}
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;	
+}
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_caption{
+    overflow: hidden;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0;
+    position:absolute;
+    display:block;
+    width:54%;  
+}
+.camera_caption_bg{
+    padding: 20px 50px 0 60px;   
+}
+
+.camera_caption strong{	
+    display: block;
+	line-height:32px;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+    font-weight: 600;
+    color:#046B2B;
+    margin-bottom: 11px;
+}
+.camera_caption p {
+	display:block;
+	line-height:20px;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color:#9a9a9a;
+}
+.camera_caption p a{	
+	line-height:28px;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+    font-weight: 600;
+    color:#046B2B;
+    margin-bottom: 11px;
+    text-decoration: underline;
+}
+.camera_caption p a:hover{	
+    color:#4e4e4e;
+}
+.camera_caption p i{	
+	line-height:28px;
+	font-size: 24px;
+    margin-left: 5px;
+    color:#4e4e4e;
+}
+
+.camera_pag{
+    z-index: 10;
+    bottom: 40px;
+    left: 53%;
+    position: absolute;
+}
+
+.camera_pag_ul{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 17px;
+    overflow: hidden;    
+
+}
+.camera_pag_ul li span {
+    display: none;
+}
+.camera_pag_ul li {
+    margin: 0 5px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/cam_pag.png) center top no-repeat;
+}
+.camera_pag_ul li:hover {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/cam_pag.png) center bottom no-repeat;
+}
+.camera_pag_ul li.cameracurrent {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/cam_pag.png) center bottom no-repeat;
+}
+
+
+.camera_loader {
+	background: url(../img/camera-loader.gif) no-repeat center;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	height: 36px;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	margin: -18px 0 0 -18px;
+	top: 50%;
+	width: 36px;
+	z-index: 3;
+}
+
+.showIt {
+	display: none;
+}
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 0px;
+	position: relative;
+}
+
+.camera_prev,
+.camera_next {
+    cursor: pointer;
+    position: absolute; 
+    z-index: 1000;
+    bottom:47%;
+    width:15px;
+    height:24px;
+}
+.camera_prev {
+    background: url(../img/camprev.png) center top no-repeat;
+    left: 30px;
+}
+.camera_next {
+    background: url(../img/camnext.png) center top no-repeat;
+    right: 30px;
+}
+.camera_prev:hover {
+    background: url(../img/camprev.png) center -24px no-repeat;
+}
+.camera_next:hover {
+    background: url(../img/camnext.png) center -24px no-repeat;
+}
+
+
+@media (min-width: 1200px) {
+    
+    
+    .camera_caption_bg{
+        padding: 80px 100px 0 60px;   
+    }
+    
+    .camera_caption strong{
+    display: block;
+    line-height: 54px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #046B2B;
+    margin-bottom: 11px;
+    }
+    .camera_caption p {
+    	display:block;
+    	line-height:22px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        color:#9a9a9a;
+    }
+    .camera_caption p a{	
+    	line-height:34px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 29px;
+        font-weight: 600;
+        color:#05a141;
+        margin-bottom: 11px;
+        text-decoration: underline;
+    }
+    
+    
+	.camera_wrap,.slider{
+        height: 386px;
+    } 
+    
+    .camera_caption_bg{
+        padding: 30px 75px 0 87px;
+    }
+    
+    
+}
+	 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    
+    .camera_caption_bg{
+        padding: 77px 75px 0 20px;
+    }
+    
+    .text1{
+        display: none !important;
+    }   
+    
+    .camera_pag{
+        display:none;
+    }
+    
+   	.camera_wrap,.slider{
+        height: 239px;
+    } 
+		  
+}
+
+@media only screen and (max-width: 979px) {
+    
+   	.camera_wrap,.slider{
+        height: 239px;
+    } 
+    
+}
+ 
+ 
+@media only screen and (max-width: 767px) {
+    
+    .camera_caption_bg{
+        padding: 50px 30px 0 10px;
+    }
+    
+    .camera_caption strong{	
+        display: block;
+    	line-height:28px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 28px;
+        font-weight: 600;
+        color:#05a141;
+        margin-bottom: 11px;
+    }
+    .text1{
+        display: none !important;
+    }   
+    .camera_caption p a{	
+    	line-height:28px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 24px;
+        font-weight: 600;
+        color:#05a141;
+        margin-bottom: 11px;
+        text-decoration: underline;
+    }
+    
+    .camera_pag{
+        display:none;
+    }
+    
+    .slider{
+        height:auto;
+        margin-bottom: 0;
+    }
+	.camera_wrap {
+    	height:auto;
+        margin-bottom: 0 !important;
+    	min-height:150px;
+    }
+    
+	
+    .slider:before {
+        left:10%;
+        right:10%;
+    }	
+		
+} 
+
+
+@media only screen and (max-width: 680px) {
+    
+	.camera_wrap {
+        margin-bottom: 0 !important;
+    }
+    
+    .camera_prev{
+        left: 10px;
+    }
+    .camera_next {
+        right: 10px;
+    }
+    
+    .slider{
+        height:auto;
+        margin-bottom: 0;
+    }
+    
+    
+    
+ }
+
+@media only screen and (max-width: 600px) {
+    
+    .camera_caption_bg{
+        padding: 30px 30px 0 10px;
+    }
+    
+    .camera_caption strong{	
+        display: block;
+    	line-height:24px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 20px;
+        font-weight: 600;
+        color:#05a141;
+        margin-bottom: 11px;
+    }
+    .text1{
+        display: none !important;
+    }   
+    .camera_caption p a{	
+    	line-height:22px;
+        font-family: 'Open Sans', sans-serif;
+    	font-size: 18px;
+        font-weight: 600;
+        color:#05a141;
+        margin-bottom: 11px;
+        text-decoration: underline;
+    }
+    
+    }
+
+
+@media only screen and (max-width: 450px) {
+    
+	.camera_caption{
+	   display:none !important;
+    }        
+    
+ }

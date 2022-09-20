@@ -1,0 +1,68 @@
+.content { 
+  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.HeadingClass{
+  font-family:Barlow Condensed;
+  font-size:250%;
+  text-align:justify;
+  margin-left:auto;
+  margin-right: auto;
+  max-width:73rem;
+  word-wrap:break-word;
+  
+  
+}
+
+.IntroTextClass{
+  font-family: 'Barlow Condensed', sans-serif;
+  color:rgb(41, 35, 35);
+  line-height: 1.7rem;
+  font-size:170%;
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:73rem;
+}
+
+.LeftTextClass{
+
+  font-family: 'Barlow Condensed', sans-serif;
+  color:rgb(41, 35, 35);
+  line-height: 1.7rem;
+  font-size:170%;
+  text-align: justify;  
+
+}
+
+.LeftImageClass{
+  
+  float:right;            
+  margin-left: 50px;
+  width: 23rem;
+}
+
+.RightImageClass{
+  
+  float:left;            
+  margin-right: 50px;
+  width: 16rem;
+}
+.columns-heading{
+  font-family: 'Barlow Condensed', sans-serif;
+  color:rgb(41, 35, 35);
+  line-height: 1.8rem;
+  font-size:250%;
+
+}
+.columns-section{
+  font-family: 'Barlow Condensed', sans-serif;
+  color:rgb(41, 35, 35);
+  line-height: 1.8rem;
+  font-size:170%;
+
+}
