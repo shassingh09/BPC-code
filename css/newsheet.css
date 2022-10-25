@@ -7,7 +7,7 @@
 }
 
 .HeadingClass{
-  font-family:Barlow Condensed;
+  font-family: 'TradeGothic-BoldCondTwenty';
   font-size:250%;
   text-align:justify;
   margin-left:auto;
@@ -19,7 +19,7 @@
 }
 
 .IntroTextClass{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
   font-size:170%;
@@ -29,9 +29,14 @@
   max-width:73rem;
 }
 
+.LineBreak{
+  line-height: 1.8rem;
+}
+
+
 .LeftTextClass{
 
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
   font-size:170%;
@@ -53,14 +58,14 @@
   width: 16rem;
 }
 .columns-heading{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'TradeGothic-BoldCondTwenty';
   color:rgb(41, 35, 35);
   line-height: 1.8rem;
   font-size:250%;
 
 }
 .columns-section{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.8rem;
   font-size:170%;
