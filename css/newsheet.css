@@ -1,11 +1,3 @@
-.content { 
-  
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-}
-
 .HeadingClass{
   font-family: 'TradeGothic-BoldCondTwenty';
   font-size:2rem;
@@ -68,4 +60,19 @@
   line-height: 1.8rem;
   font-size:1.4rem;
 
+}
+
+@media screen and (max-width: 650px) {
+  .RightImageClass, .LeftImageClass {
+
+    display:block;
+    float:none;
+    margin: 0 auto;
+    
+  }
+}
+@media screen and (max-width: 650px) {
+  .HeadingClass{
+    text-align: center;
+  }
 }
