@@ -8,13 +8,11 @@
 
 .HeadingClass{
   font-family: 'TradeGothic-BoldCondTwenty';
-  font-size:250%;
-  text-align:justify;
+  font-size:2rem;
+  text-align:left;
   margin-left:auto;
   margin-right: auto;
   max-width:73rem;
-  word-wrap:break-word;
-  
   
 }
 
@@ -22,7 +20,7 @@
   font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
-  font-size:170%;
+  font-size:1.4rem;
   text-align:left;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +37,7 @@
   font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
-  font-size:170%;
+  font-size:1.4rem;
   text-align: left;  
 
 }
@@ -55,19 +53,19 @@
   
   float:left;            
   margin-right: 50px;
-  width: 16rem;
+  width: 15rem;
 }
 .columns-heading{
   font-family: 'TradeGothic-BoldCondTwenty';
   color:rgb(41, 35, 35);
   line-height: 1.8rem;
-  font-size:250%;
+  font-size:2rem;
 
 }
 .columns-section{
   font-family: 'tradegothic_lt_condeighteenRg';
   color:rgb(41, 35, 35);
   line-height: 1.8rem;
-  font-size:170%;
+  font-size:1.4rem;
 
 }
