@@ -5,11 +5,12 @@
   margin-left:auto;
   margin-right: auto;
   max-width:73rem;
+  color:#006747
   
 }
 
 .IntroTextClass{
-  font-family: 'tradegothic_lt_condeighteenRg';
+  font-family: 'Open Sans';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
   font-size:1.4rem;
@@ -26,7 +27,7 @@
 
 .LeftTextClass{
 
-  font-family: 'tradegothic_lt_condeighteenRg';
+  font-family: 'Open Sans';
   color:rgb(41, 35, 35);
   line-height: 1.7rem;
   font-size:1.4rem;
@@ -38,6 +39,7 @@
   
   float:right;            
   margin-left: 50px;
+  margin-bottom:10px;
   width: 23rem;
 }
 
@@ -49,13 +51,13 @@
 }
 .columns-heading{
   font-family: 'TradeGothic-BoldCondTwenty';
-  color:rgb(41, 35, 35);
+  color:#006747;
   line-height: 1.8rem;
   font-size:2rem;
 
 }
 .columns-section{
-  font-family: 'tradegothic_lt_condeighteenRg';
+  font-family: 'Open Sans';
   color:rgb(41, 35, 35);
   line-height: 1.8rem;
   font-size:1.4rem;
@@ -75,4 +77,14 @@
   .HeadingClass{
     text-align: center;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .row_1{
+    display: none;
+  }
+}
+
+.span5{
+  width: 16.85rem;  
 }

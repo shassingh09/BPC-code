@@ -132,3 +132,45 @@
     font-style: normal;
 
 }
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans_Condensed-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans_SemiCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
