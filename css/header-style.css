@@ -1,0 +1,135 @@
+
+header{
+  width: 100vw;
+  height: 45px;
+  border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+  font-family: 'TradeGothic-BoldCondTwenty';
+  background-color: #384b52;
+}
+.header2{
+  width: 100vw;
+  padding-left: 10px;
+  height: 135px;
+  border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+  font-family: 'TradeGothic-BoldCondTwenty';
+  font-size: 2.5rem;
+  background-color: #3f565e;
+}
+.coe-text{
+  font-size: 1.4rem;
+}
+
+.header3{
+  width: 100vw;
+  padding-left: 10px;
+  height: 85px;
+  border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+  font-family: 'TradeGothic-BoldCondTwenty';
+  color:#006747 ;
+  font-size: 1.3rem;
+  background-color: #efeff0;
+}
+header .inner{
+  width: 1168px; /* This is the inner width of the content inside of your header (80%, etc) */
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+header .logo{
+  display: table;
+  height: 100%; 
+  float: left;
+}
+
+header .logo div{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header .logo img{
+  height: 26px;
+  margin-top: 5px; /* Optical alignment of the logo */
+}
+
+header nav{ /*change float to left here*/
+  float: left;
+  height: 100%;
+}
+
+header nav li{
+  display: table;
+  height: 100%;
+  float: left;
+  margin-right: 30px;
+}
+
+.header3 nav li{
+  display: table;
+  height: 100%;
+  float: left;
+  margin-right: 4rem;
+}
+
+
+header nav li:last-of-type{
+  margin-right: 0;
+}
+
+header nav span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header nav a{
+  color: #FFF;
+}
+
+.header3 nav a{
+  color: #006747;
+}
+
+header nav .button:hover{
+  filter: brightness(1.05);
+}
+
+.right-float{
+  float:right;
+}
+
+@media screen and (min-width: 933px) {
+  .navbar, .navbar_ , .clearfix , .extra  {
+
+    display:none !important;
+    
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header2 {   
+    width: 100vw; 
+    padding-left: 10px;    
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .header3 {  
+    display:none !important;       
+  }
+}
+
+@media screen and (max-width: 578px) {
+  
+  .header2{
+    width: 100vw;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .coe-text {
+    width: 100vw;
+    font-size: 1.4rem;
+    float: left;   
+  }
+}
