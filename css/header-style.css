@@ -133,3 +133,14 @@ header nav .button:hover{
     font-size: 1.3rem;
   }
 }
+
+.header2 a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover,
+a:active{
+  color: #006747;
+  text-decoration: underline;
+}
